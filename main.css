@@ -1,0 +1,77 @@
+h1{
+background-color: rgb(23, 23, 181);
+color: rgb(255, 255, 255);
+font-size: 40px;
+line-height: 1.6em;
+margin-top: auto;
+top: 50%;
+width: 100%;
+text-align: left;
+padding: 20px;
+border-radius: 10px;
+border-width: 3px;
+border-style: solid;
+
+
+}
+
+h3{
+    display: block;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: right;
+    margin-top: -700px;
+ 
+
+}
+body{
+    background-color: rgb(234, 230, 225);
+} 
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   height: auto;
+   padding: 55px;
+}
+
+a{
+    display: block;
+    margin: -200px auto 0;
+   font-size: large;
+    font-weight: bold;
+  text-align: center;
+    padding: 12px;
+   
+}
+
+footer{
+    background-color: rgb(23, 23, 181);
+    color: white;
+    padding: 50px;
+    border: 10px;
+    line-height: 1.6em;
+    margin-top: 30px;
+border-radius: 10px;
+border-width: 3px;
+border-style: solid;
+}
+
+#utc-time{
+   font-weight: bold;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin: -20px;
+}
+
+#currentDayOfTheWeek{
+   font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    text-align: right;
+    margin: -20px;
+
+}
