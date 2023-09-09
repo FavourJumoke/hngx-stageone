@@ -23,3 +23,11 @@ updateTime();
 
 
 
+function updateDayOfWeek() {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const now = new Date();
+    const dayOfWeekString = daysOfWeek[now.getDay()];
+    document.getElementById('current-day').textContent = dayOfWeekString;
+}
+updateDayOfWeek(); // Initial update
+setInterval(updateDayOfWeek, 1000 * 60 * 60 * 24);
