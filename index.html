@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="main.css" />
 </head>
 <body>
- <header>
-<div  class="texts">
-<h1 data-testid="slackUserName">Favour_Joseph</h1>
-<img data-testid="slackDisplayImage" src="slackDisplayImage.jpg" alt="Favour Joseph">
-</div>
-</header>   
-<footer>
-    <p data-testid="currentDayOfTheWeek" id="current-day"></p>
-    <p data-testid="currentUTCTime" id="utc-time">UTC+1 WAT 12:16pm</p>
-   <h3 data-testid="myTrack">FRONTEND</h3>
+  <!-- My Slack Name -->
+  <h1 id="slack-name" data-testid="slackUserName">Favour_Joseph</h1>
+    
+  <!-- My Slack Display Picture -->
+  <img id="slack-display-image" src="slackDisplayImage.jpg" alt="Favour_Joseph" data-testid="slackDisplayImage">
+  <footer>
+  <!--Day of the Week -->
+  <p id="current-day" data-testid="currentDayOfTheWeek"></p>
+  
+  <!-- Current UTC Time -->
+  <p id="current-utc-time" data-testid="currentUTCTime"></p>
 </footer>
-<div class="image and link">
-        <p><a data-testid="githubURL"  href= "https://github.com/FavourJumoke/hngx-stageone">Github Respository</a></p>
-       </div>
+  <!--My Track -->
+  <p id="my-track" data-testid="myTrack">Front-end</p>
+  
+  <!-- github link -->
+  <p><a href="https://github.com/FavourJumoke/hngx-stageone" id="repo-link">Repository link</a></p>
        <script src="index.js"></script>
 </body>
 </html>

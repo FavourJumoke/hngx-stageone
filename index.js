@@ -1,33 +1,16 @@
-function updateTime() {
-    const utcTimeElement = document.getElementById("utc-time");
-    const now = new Date();
+function updateData() {
+    const daysOfWeek = ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const currentDate = new Date();
+    const currentDayOfWeek = daysOfWeek[currentDate.getUTCDay()];
+    const currentUTCTime = currentDate.getTime();
     
-    const options = {
-        timeZone: "Africa/Lagos", 
-        hour12: true,
-        hour: 'numeric', 
-        minute: 'numeric',
-        second: 'numeric',
-        timeZoneName: 'short'
-    };
-
-    const timeString = now.toLocaleString("en-US", options);
-    utcTimeElement.textContent = `UTC+1 WAT ${timeString}`;
+    document.getElementById("current-day").textContent = currentDayOfWeek;
+    document.getElementById("current-utc-time").textContent = currentUTCTime;
 }
 
-// Update the time every second (1000 milliseconds)
-setInterval(updateTime, 1000);
+updateData();
 
-// Call updateTime() immediately to display the time on page load
-updateTime();
+setInterval(updateData, 1000);
 
-
-
-function updateDayOfWeek() {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const now = new Date();
-    const dayOfWeekString = daysOfWeek[now.getDay()];
-    document.getElementById('current-day').textContent = dayOfWeekString;
-}
-updateDayOfWeek(); // Initial update
-setInterval(updateDayOfWeek, 1000 * 60 * 60 * 24);
+document.getElementById("slack-name").textContent = "Favour_Joseph";
+document.getElementById("my-track").textContent = "Front-end";
