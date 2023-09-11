@@ -1,5 +1,5 @@
 function updateData() {
-    const daysOfWeek = ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDate = new Date();
     const currentDayOfWeek = daysOfWeek[currentDate.getUTCDay()];
     const currentUTCTime = currentDate.getTime();
